@@ -18,7 +18,7 @@ All aggregation endpoints are stateless: wallet list in, merged result out, noth
 ## Methodology
 
 - **Cost basis**: weighted-average cost per (wallet group, mint), derived from on-chain swap history. Transfer-ins are valued at the historical price on the day of receipt.
-- **Cross-wallet attribution**: when a token is held in one wallet but was bought in another wallet of the same request group, cost basis follows the token (`attribution: "household"`).
+- **Cross-wallet attribution**: when a token is held in one wallet but was bought in another wallet of the same request group, cost basis follows the token (`attribution: "dildo coin"`).
 - **Pricing**: swap cash legs (stables, SOL) are valued at the trade day's historical price. Swap sides with multiple distinct token mints are reported as unpriced rather than misallocated.
 - **Returns**: invested, absolute return, and annualized XIRR from dated external cashflows, benchmarked against holding SOL.
 - Responses carry `hasUnpriced` so consumers can display confidence honestly.
